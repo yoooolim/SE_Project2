@@ -126,4 +126,6 @@ void timecmp(){
         }
     }
     printf("\n");
+
+    
 }

@@ -71,7 +71,24 @@ void sizecmp(){
 
 //두 개의 파일 블락 수를 비교하는 함수 작성
 void blockcmp(){
+	int file1_block = stat1.st_blocks, file2_block = stat2.st_blocks;
+
+	printf("block compare\n");
+
+	if (block1 > block2) {
+        printf("text1 is bigger\n");
+    }
+
+	else if (block2 > block1){
+        printf("text2 is bigger\n");
+    }
+    
+	else {
+        printf("sizes are equal\n");
+    }
+	printf("\n");
 }
+
 
 
 //두 개의 파일 수정 날짜를 비교하는 함수 작성

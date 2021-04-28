@@ -89,7 +89,7 @@ void datecmp() {
             printf("same date\n");
         }
     }
-    printf("\n")
+    printf("\n");
 }
 
 //두 개의 파일 수정 시간을 비교하는 함수 작성

@@ -30,7 +30,7 @@ int main(){
 //파일 1의 정보를 가져오는 함수 작성
 void filestat1(){
     stat("./text1", &stat1); 
-
+}
 
 //파일 2의 정보를 가져오는 함수 작성
 void filestat2(){
@@ -39,7 +39,7 @@ void filestat2(){
 
 //파일 1의 시간 정보를 가져오는 함수 작성
 void filetime1() {
-    time1 = localtime(&stat1.st_mtime)
+    time1 = localtime(&stat1.st_mtime);
 }
 
 //파일 2의 시간 정보를 가져오는 함수 작성
@@ -75,11 +75,11 @@ void blockcmp(){
 
 	printf("block compare\n");
 
-	if (block1 > block2) {
+	if (file1_block > file2_block) {
         printf("text1 is bigger\n");
     }
 
-	else if (block2 > block1){
+	else if (file2_block > file1_block){
         printf("text2 is bigger\n");
     }
     

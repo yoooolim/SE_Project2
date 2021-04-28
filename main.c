@@ -102,7 +102,7 @@ void timecmp(){
     int time1_min = time1->tm_min;
     int time1_sec = time1->tm_sec;
 
-    int time2 = localtime(&stat2.st_mtime);
+    time2 = localtime(&stat2.st_mtime);
     int time2_hour = time2->tm_hour;
     int time2_min = time2->tm_min;
     int time2_sec = time2->tm_sec;
